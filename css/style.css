@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: url('/img/background_img.svg') center center / cover no-repeat;
+    padding: 22px 0px 33px 106px;
+}
+
+.header_top_block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 150px;
+}
+
+.header_top_icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.phone_number {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+
+}
+
+.nav_menu_item {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header_block {
+    margin-top: 150px;
+    background-color: #000;
+    width: 50%;
+    height: 400px;
+    margin-left: -50px;
+    padding-left: 70px;
+    padding-top: 67px;
+}
+
+.title_line_wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    color: #9c9c9c;
+}
+
+.title_line {
+    margin-left: 10px;
+    width: 12%;
+    height: 1px;
+    background-color: #9c9c9c;
+}
+
+.header_main_text {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-top: 10px;
+}
+
+.main_text_span {
+    color: #28553f;
+}
+
+.btn_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.header_сalculate_btn {
+    width: 288px;
+    height: 70px;
+    background-color: #28553f;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header_сalculate_btn:hover {
+    background: none;
+    border: 2px solid #28553f;
+    transition: background 0.8s;
+}
+
+.header_getintouch_btn {
+    width: 288px;
+    height: 70px;
+    margin-left: 40px;
+    background-color: #141414;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header_getintouch_btn:hover {
+    background: none;
+    border: 2px solid #141414;
+    transition: background 0.8s;
+}
+
+/* Our Advantages Section */
+
+.our_advantages_section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 61px 136px 60px 136px;
+}
+
+.advantages_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantages_line {
+    width: 120px;
+    height: 1.5px;
+    background-color: #28553f;
+}
+
+.advantages_header {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #282A30;
+}
+
+.advantages_header_span {
+    color: #28553f;
+}
+
+.advantages_divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.advantages_description_divider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.advantages_description_wrapper {
+    margin-bottom: 50px;
+}
+
+.description_header {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #09090a;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.description_details {
+    width: 100%;
+}
+
+.description_details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.description_details summary::-webkit-details-marker {
+    display: none;
+}
+
+.details_items_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details_summary_icon {
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid #28553f;
+    border-bottom: 3px solid #28553f;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+.description_details {
+    transition: all 0.8s ease;
+}
+
+.description_details[open] .details_summary_icon {
+    transform: rotate(135deg);
+}
+
+.details_line {
+    flex: 1;
+    height: 2px;
+    background-color: #28553f;
+    margin-left: 15px;
+}
+
+.details_line_second {
+    margin: 0 20px 0 0;
+}
+
+.radial_circle_counter {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #28553f;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.details_text_block {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #09090a;
+    font-weight: 500;
+}
+
+
+.advantages_second_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.description_header_second {
+    width: 80%;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.advantages_description_image {
+    margin-top: -100px;
+}
+
+/* Products of natural stone section */
+.products_of_natural_stone_section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 61px 136px 60px 136px;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+.header_natural_stone_wrapper {
+    width: 100%;
+}
+
+.header_natural_stone_line {
+    width: 7%;
+    height: 2px;
+    background-color: #28553f;
+}
+
+.header_natural_stone {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.header_natural_stone_span {
+    color: #28553f;
+}
+
+.see_all_product_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.see_all_header {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.see_all_header_arrow {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.products_of_natural_stone_images_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.products_of_natural_stone_images_wrapper img {
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.products_of_natural_stone_images_wrapper img:hover {
+    transform: scale(1.1);
+    margin: 40px;
+
+}
+
+/* Current promotions section */
+
+.current_promotions_section {
+    width: 100%;
+    min-height: 100vh;
+    background: url('/img/content_photo/action_bg.svg') center center / cover no-repeat;
+    padding: 61px 136px 60px 0;
+}
+
+.current_promotions_see_all_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.current_promotions_see_all_header {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.current_promotions_see_all_header_arrow {
+    margin-left: 10px;
+    cursor: pointer;
+    fill: #fff;
+}
+
+.current_promotions_divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promotions_directory_link_block {
+    width: 50%;
+    height: 500px;
+    padding: 61px 136px 60px 136px;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.95) 10%,
+            rgba(0, 0, 0, 0.7) 60%,
+            rgba(0, 0, 0, 0.3) 100%,
+            rgba(0, 0, 0, 0) 100%);
+
+}
+
+.directory_link_line {
+    width: 20%;
+    height: 1.5px;
+    background-color: #fff;
+}
+
+.directory_link_header {
+    margin-top: 15px;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.directory_link_header_span {
+    color: #28553f;
+}
+
+.directory_link_subtitle {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.directory_button_link {
+    width: 238px;
+    height: 60px;
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #28553f;
+    border: none;
+    cursor: pointer;
+}
+
+.directory_button_link:hover {
+    border: 2px solid #28553f;
+    background: none;
+    transition: background 0.8s;
+}
+
+.promotions_card_wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.promotion_notification_card_block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(187%);
+    background-color: #fff;
+    opacity: 0.7;
+    width: 86px;
+    height: 34px;
+}
+
+.promotions_card_block {
+    width: 282px;
+    height: 445px;
+    padding: 14px;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+.goods_name_header {
+    margin-top: 15px;
+    color: #28553f;
+}
+
+.goods_name_subtitle {
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.prices_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.promotion_price {
+    font-size: 22px;
+    color: #28553f;
+}
+
+.main_price {
+    font-size: 17px;
+    font-weight: 400;
+    color: #949981;
+}
+
+.main_price_sign_icon {
+    font-weight: 600;
+}
+
+.card_read_more_btn {
+    width: 100%;
+    color: #fff;
+    background-color: #28553f;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    height: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.card_read_more_btn:hover {
+    border: 2px solid #28553f;
+    background: none;
+    transition: background 0.8s;
+    color: #28553f;
+}
+
+/* Inspiration section */
+
+.inspiration_section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 61px 136px 60px 136px;
+    background-color: #f9f9f9;
+}
+
+.inspiration_header_wrapper {
+    width: 100%;
+}
+
+.header_inspiration_header_line {
+    width: 7%;
+    height: 2px;
+    background-color: #28553f;
+}
+
+.header_inspiration {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.header_inspiration_span {
+    color: #28553f;
+}
+
+.inspiration_gallery_wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 450px;
+    gap: 20px;
+}
+
+.plates_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.plates_image:hover {
+    transform: scale(1.1);
+    margin: 10px;
+    transition: all 0.8s ease;
+    border-radius: 10px;
+}
+
+/* велика ліва картинка */
+.item_image1 {
+    grid-column: 1 / 2; /* перша колонка */
+    grid-row: 1 / 3;   /* займає два рядки */
+}
+
+/* верхні праві */
+.item_image2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.item_image3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+/* нижні праві */
+.item_image4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.item_image5 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.see_more_btn_wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inspiration_gallery_link_btn {
+    width: 405px;
+    height: 52px;
+    background-color: #28553f;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inspiration_gallery_header_arrow {
+    fill: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.inspiration_gallery_link_btn box-icon {
+    fill: #fff;
+    transition: all 0.8s ease;
+}
+
+.inspiration_gallery_link_btn:hover {
+    border: 2px solid #28553f;
+    background: none;
+    color: #28553f;
+    transition: background 0.8s;
+}
+
+.inspiration_gallery_link_btn:hover box-icon {
+    fill: #28553f;
+}
+
+/* Leave questions section */
+
+.leave_questions_section {
+    width: 100%;
+    height: 600px;
+    background: url('/img/footer_photo/footer_bg.svg') center center / cover no-repeat;
+    padding: 61px 136px 60px 136px;
+    border-bottom: 1px solid #3a3b3e;
+}
+
+.leave_questions_header {
+    font-size: 33px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.leave_questions_subtitle {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.leave_form_wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.leave_input {
+    background: none;
+    border: 1.5px solid #fff;
+    width: 260px;
+    height: 55px;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.leave_input::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+.leave_form_second_input {
+    margin-left: 20px;
+}
+
+.form_confirm_btn {
+    margin-left: 20px;
+    width: 260px;
+    height: 55px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.form_confirm_btn:hover {
+    border: 1.5px solid #fff;
+    background: none;
+    color: #fff;
+    transition: background 0.8s;
+}
+
+.checkbox_confirm_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* приховуємо нативний чекбокс */
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* кастомна "коробочка" */
+.custom_checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 4px; /* трохи скруглення */
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* галочка */
+.custom_checkbox::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #28553f; 
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* коли чекбокс активний */
+.checkbox:checked + .custom_checkbox {
+    background: #fff; /* білий фон */
+    border-color: #fff;
+}
+
+.checkbox:checked + .custom_checkbox::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.confirm_text {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.confirm_text_link {
+    color: #fff;
+}
+
+.footer {
+    background-color: #000;
+    width: 100%;
+    min-height: 20vh;
+    padding: 61px 136px 60px 136px;
+}
+
+.footer_divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer_block_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo_image {
+    margin-top: 30px;
+}
+
+.menu_footer_nav_header {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.menu_footer_nav_link {
+    margin-top: 15px;
+    color: #999999;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu_footer_nav_link:hover {
+    color: #f9f9f9;
+    transition: all 0.6s ease;
+}
+
+.footer_third_header {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.footer_phone_number {
+    color: #fff;
+}
+
+.email {
+    margin-top: 15px;
+    color: #fff; 
+}
+
+.communication_item {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.communication_item:hover {
+    color: #f9f9f9;
+    transition: all 0.6s ease;
+}
+
+.footer_social_icons_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer_social_icon_block {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+.footer_social_icon_block:hover {
+    background-color: #333333;
+    transition: all 0.6s ease;
+}
+
+.footer_social_icon {
+    fill: #fff;
+    cursor: pointer;
+}
+
+.footer_place_gid_header_wrapper {
+    width: 100%;
+    height: 8vh;
+    border-top: 1px solid #3a3b3e;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_place_gid_header {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
