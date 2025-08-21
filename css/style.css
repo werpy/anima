@@ -56,16 +56,42 @@
 }
 
 .nav_menu_item {
+    position: relative;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0 10px;
+    transition: color 0.6s ease;
 }
+
+.nav_menu_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    /* відступ від тексту */
+    width: 100%;
+    height: 2px;
+    background-color: #28553f;
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+    transform-origin: center;
+}
+
+.nav_menu_item:hover {
+    color: #28553f;
+}
+
+.nav_menu_item:hover::after {
+    transform: scaleX(1);
+}
+
 
 .header_block {
     margin-top: 150px;
     background-color: #000;
     width: 50%;
-    height: 400px;
+    min-height: 400px;
     margin-left: -50px;
     padding-left: 70px;
     padding-top: 67px;
@@ -397,7 +423,7 @@
 
 .promotions_directory_link_block {
     width: 50%;
-    height: 500px;
+    min-height: 500px;
     padding: 61px 136px 60px 136px;
     background: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.95) 10%,
@@ -585,8 +611,10 @@
 
 /* велика ліва картинка */
 .item_image1 {
-    grid-column: 1 / 2; /* перша колонка */
-    grid-row: 1 / 3;   /* займає два рядки */
+    grid-column: 1 / 2;
+    /* перша колонка */
+    grid-row: 1 / 3;
+    /* займає два рядки */
 }
 
 /* верхні праві */
@@ -656,7 +684,7 @@
 
 .leave_questions_section {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     background: url("../img/footer_photo/footer_bg.svg") center center / cover no-repeat;
     padding: 61px 136px 60px 136px;
     border-bottom: 1px solid #3a3b3e;
@@ -743,7 +771,8 @@
     width: 20px;
     height: 20px;
     border: 2px solid #fff;
-    border-radius: 4px; /* трохи скруглення */
+    border-radius: 4px;
+    /* трохи скруглення */
     position: relative;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -757,19 +786,20 @@
     left: 5px;
     width: 5px;
     height: 10px;
-    border: solid #28553f; 
+    border: solid #28553f;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg) scale(0);
     transition: transform 0.2s ease;
 }
 
 /* коли чекбокс активний */
-.checkbox:checked + .custom_checkbox {
-    background: #fff; /* білий фон */
+.checkbox:checked+.custom_checkbox {
+    background: #fff;
+    /* білий фон */
     border-color: #fff;
 }
 
-.checkbox:checked + .custom_checkbox::after {
+.checkbox:checked+.custom_checkbox::after {
     transform: rotate(45deg) scale(1);
 }
 
@@ -834,7 +864,7 @@
 
 .email {
     margin-top: 15px;
-    color: #fff; 
+    color: #fff;
 }
 
 .communication_item {
@@ -891,3 +921,385 @@
     font-size: 17px;
     text-decoration: none;
 }
+
+/* Adaptive */
+
+@media (max-width: 1600px) {
+    .header_block {
+        padding: 40px;
+    }
+
+    .btn_wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .header_getintouch_btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .current_promotions_section {
+        padding-left: 136px;
+    }
+
+    .promotions_directory_link_block {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .promotions_card_block {
+        margin-left: 0;
+    }
+
+    .current_promotions_divider {
+        display: flex;
+
+
+        flex-direction: column;
+    }
+
+    .promotions_card_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media (max-width: 1450px) {
+    .promotions_card_wrapper {
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .promotions_card_block {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .see_all_product_wrapper {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1312px) {
+    .promotions_card_wrapper {
+        width: 80%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .header_block {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .advantages_divider {
+        flex-direction: column;
+    }
+
+    .advantages_description_divider:nth-child(1) {
+        order: 1;
+    }
+
+    .advantages_description_divider:nth-child(2) {
+        order: 3;
+    }
+
+    .advantages_description_divider:nth-child(3) {
+        order: 2;
+    }
+
+    .advantages_second_block {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .description_header_second {
+        width: 100%;
+    }
+
+    .advantages_description_image {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer_divider {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1060px) {
+    .footer_block_wrapper {
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+
+    .footer_block_wrapper:nth-child(2) {
+        margin-right: 90px;
+    } 
+}
+
+@media (max-width: 1101px) {
+    .leave_form_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leave_input {
+        width: 100%;
+    }
+
+    .leave_form_second_input {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .form_confirm_btn {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1052px) {
+    .promotions_card_wrapper {
+        width: 100%;
+    }
+
+    .promotions_card_block {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 940px) {
+    .header {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+    .burger_menu_nav_wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .burger_menu_nav_wrapper {
+        display: none;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .header {
+        padding-left: 0;
+    }
+
+    .header_menu_burger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 50px;
+        width: 100%;
+        min-height: 60px;
+        background-color: #000;
+        margin-top: 10px;
+    }
+
+    .burger_menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger_line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 8px;
+        /* відстань між лініями */
+        margin-top: 5px;
+    }
+
+    /* меню поверх всього екрану */
+    .burger_menu_nav_wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        z-index: 1000;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+    /* активне меню */
+    .burger_menu_nav_wrapper.active {
+        display: flex;
+        
+    }
+
+    /* шапка меню: кнопка закриття зліва, лого справа */
+    .burger_menu_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #9c9c9c;
+    }
+
+
+    /* список пунктів меню */
+    .nav_menu_burger_list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        /* на всю ширину */
+    }
+
+    .nav_menu_burger_item {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        border-bottom: 1px solid #9c9c9c;
+        height: 50px;
+    }
+
+    .burger_nav_close_btn_wrapper {
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger_nav_close_btn {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 8px;
+        /* відстань між лініями */
+        margin-top: 5px;
+    }
+
+    .burger_nav_close_btn:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+
+    .burger_nav_close_btn:nth-child(2) {
+        transform: rotate(45deg);
+        margin-top: -10px;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .promotions_card_wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .promotions_card_block {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .products_of_natural_stone_images_wrapper {
+        width: 100%;
+        /* padding: 30px; */
+    }
+
+    .fisrt_picture {
+        width: 100%;
+        
+    }
+
+    .second_picture {
+        width: 100%;
+        
+    }
+
+    .third_picture {
+        width: 100%;
+        
+    }
+
+    .fourth_picture {
+        width: 100%;
+        
+    }
+} 
+
+@media (max-width: 670px) {
+    .our_advantages_section {
+        padding: 30px;
+    }
+
+    .products_of_natural_stone_section {
+        padding: 30px;
+    }
+
+    .current_promotions_section {
+        padding: 30px;
+    }
+
+    .inspiration_section {
+        padding: 30px;
+    }
+
+    .leave_questions_section {
+        padding: 30px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .promotions_directory_link_block {
+        padding: 30px;
+    }
+
+    .advantages_description_image {
+        width: 100%;
+    }
+
+    .header_top_block {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 460px) {
+    .header_сalculate_btn {
+        width: 100%;
+    }
+
+    .header_getintouch_btn {
+        width: 100%;
+    }
+    
+    .promotions_card_block {
+        margin-left: 0;
+    }
+}
+
